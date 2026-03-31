@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>সহজ আয়-ব্যয় হিসাব</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>আয়-ব্যয় হিসাব</h2>
+
+      <div class="balance-board">
+        <div>
+          <h4>মোট আয়</h4>
+          <p id="total-income">৳০</p>
+        </div>
+        <div>
+          <h4>মোট ব্যয়</h4>
+          <p id="total-expense">৳০</p>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <input type="text" id="description" placeholder="বিবরণ (উদা: বেতন)" />
+        <input type="number" id="amount" placeholder="টাকার পরিমাণ" />
+        <select id="type">
+          <option value="income">আয়</option>
+          <option value="expense">ব্যয়</option>
+        </select>
+        <button onclick="addItem()">যোগ করুন</button>
+      </div>
+
+      <ul id="item-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
